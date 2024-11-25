@@ -6,7 +6,6 @@ public class Appointment {
     private String date;
     private String time;
 
-    //constractor appoinment class
     public Appointment(patient patient, Doctor doctor, String date, String time) {
         this.patient = patient;
         this.doctor = doctor;
