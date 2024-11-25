@@ -6,7 +6,6 @@ public class main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        //  Patient details
         System.out.println("Enter Patient Details:");
         System.out.print("Name: ");
         String patientName = scanner.nextLine();
@@ -21,7 +20,6 @@ public class main {
 
         patient patient = new patient(patientName, patientAge, patientGender, patientContact);
 
-        //  Doctor details
         System.out.println("\nEnter Doctor Details:");
         System.out.print("Name: ");
         String doctorName = scanner.nextLine();
@@ -33,9 +31,9 @@ public class main {
         Doctor doctor = new Doctor(doctorName, doctorSpecialization, doctorContact);
 
         System.out.println("\nEnter Appointment Details:");
-        System.out.print("Date (e.g., 2024-11-20): ");
+        System.out.print("Date (Ex.., 2024-11-20): ");
         String appointmentDate = scanner.nextLine();
-        System.out.print("Time (e.g., 10:00 AM): ");
+        System.out.print("Time (ex.., 10:00 AM): ");
         String appointmentTime = scanner.nextLine();
 
         Appointment appointment = new Appointment(patient, doctor, appointmentDate, appointmentTime);
